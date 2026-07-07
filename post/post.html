@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog Post</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Load JavaScript after HTML is parsed -->
+    <script src="../script/index.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img
+                src="https://images.pexels.com/photos/17229134/pexels-photo-17229134.jpeg"
+                alt="Logo"
+                width="50"
+                height="50"
+            >
+            <h2>My Blog</h2>
+        </div>
+
+        <div class="nav-links">
+            <nav>
+                <ul>
+                    <li><a href="/blog/index.html">Home</a></li>
+                    <li><a href="/blog/post/post.html">Blog</a></li>
+                    <li><a href="/blog/about/about.html">About</a></li>
+                    <li><a href="/blog/contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <h1>Add New Blog Post</h1>
+
+    <form id="blogForm">
+
+        <label for="title">Title</label><br>
+        <input
+            type="text"
+            id="title"
+            required
+        >
+        <br><br>
+
+        <label for="content">Content</label><br>
+
+        <textarea
+            id="content"
+            rows="10"
+            cols="50"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <label for="image">Image</label><br>
+
+        <input
+            type="file"
+            id="image"
+            accept="image/*"
+        >
+
+        <br><br>
+
+        <img
+            id="preview"
+            src=""
+            alt="Image Preview"
+            width="200"
+            style="display:none;"
+        >
+
+        <br><br>
+
+        <button type="submit">
+            Submit Blog
+        </button>
+
+    </form>
+
+</main>
+
+</body>
+</html>
